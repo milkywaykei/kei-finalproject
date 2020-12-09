@@ -1,0 +1,16 @@
+#table_id {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+table, th, td {
+  padding: 0.5rem;
+  width: 100%;
+  table-layout: fixed;
+  margin-top: auto;
+  margin-left: 20px;
+  border: rgb(4, 0, 255);
+  border-style: solid;
+  border-width: 2px;
+  background-color: black;
+}

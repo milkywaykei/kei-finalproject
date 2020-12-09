@@ -1,0 +1,31 @@
+{% extends '_templates/base.njk' %}
+
+{% block page_title %}Tour Dates{% endblock %}
+
+{% block page_description %}Find 2021 Tour Dates here{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="heading"><h1>Queen 2021 Tour</h1></div>
+  <div class="row">
+      <table id="table_id" class="display">
+          <thead>
+              <tr>
+                  <th>City</th>
+                  <th>Venue</th>
+                  <th>Date</th>
+              </tr>
+          </thead>
+    {% for tour2021 in queen.tour2021 %}
+          <tbody>
+              <tr>
+                  <td>{{ tour2021.city }}</td>
+                  <td>{{ tour2021.venue }}</td>
+                  <td>{{ tour2021.date }}</td>
+              </tr>
+          </tbody>
+    {% endfor %}
+      </table>
+  </div>
+{% endblock %}
+  </div>
