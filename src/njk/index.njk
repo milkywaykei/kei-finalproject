@@ -5,25 +5,22 @@
 {% block page_description %}The index search description for this page goes here.{% endblock %}
 
 {% block content %}
+    <div class="jumbotron">
+      <h1 class="display-4">Queen</h1>
+    </div>
+
 <div class="container">
   <h1>Queen</h1>
   <p>Queen are a British rock band formed in London in 1970. Their classic line-up was Freddie Mercury (lead vocals, piano), Brian May (guitar, vocals), Roger Taylor (drums, vocals) and John Deacon (bass). Their earliest works were influenced by progressive rock, hard rock and heavy metal, but the band gradually ventured into more conventional and radio-friendly works by incorporating further styles, such as arena rock and pop rock.</p>
   <h2>Queen Members</h2>
-  <p>This loops through data that came from a Google Docs example.</p>
-  <div class="row col-sm-8 col-lg-4">
+  <p>Original members of Queen</p>
+  <div class="row">
     {% for member in queen.members %}
-      <div class="row">
+      <div class="col-sm-6 col-lg-3">
         <img src="img/{{ member.slug }}-color.jpg" alt="" class="img-fluid">
         <h5><a href="members/{{ member.slug }}.html">{{ member.name }}</a></h5>
       </div>
     {% endfor %}
   </div>
-  <h2>Queen Discography</h2>
-  <hr>
-  {% for discography in queen.discography %}
-    <h3><a href="{{ discography.image }}" target="_blank">{{ discography.title }}</a></h3>
-    <p>{{ discography.title}}, {{ discography.year }}</p>
-    <hr>
-  {% endfor %}
 </div>
 {% endblock %}

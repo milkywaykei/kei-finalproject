@@ -23,4 +23,39 @@
 
 h3 {
   font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-family: 'PT Serif', serif;
+}
+
+/* jumbotron */
+
+.jumbotron {
+  font-size: 100%;
+  background: url(../img/queen-band-wallpaper-thin.jpg) center;
+  background-size: cover;
+  color: white;
+  padding-top: 10rem
+}
+
+#table_id {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+table, th, td {
+  padding: 0.5rem;
+  width: 100%;
+  table-layout: fixed;
+  margin-top: auto;
+  margin-left: 20px;
+  border: rgb(0, 0, 0);
+  border-style: solid;
+  border-width: 2px;
 }
